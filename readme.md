@@ -4,7 +4,7 @@ This project focuses on visualizing India's export and import data from 1997 to 
 
 ## Dataset
 
-Source: [Exports and Imports of India](https://www.kaggle.com/datasets/ramjasmaurya/exports-and-imports-of-india19972022)
+Source: [Exports and Imports of India (1997-July 2022)](https://www.kaggle.com/datasets/ramjasmaurya/exports-and-imports-of-india19972022)
 
 The dataset comprises India's export and import statistics over the years, including:
 
