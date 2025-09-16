@@ -1,10 +1,10 @@
-# Data Visualization Using Seaborn
-
-## Overview
+# Data Visualization Using Seaborn and Matplotlib
 
 This project focuses on visualizing India's export and import data from 1997 to July 2022. By leveraging Seaborn and Matplotlib libraries, various plots are generated to uncover insights and trends in the dataset.
 
 ## Dataset
+
+Source: [Exports and Imports of India](https://www.kaggle.com/datasets/ramjasmaurya/exports-and-imports-of-india19972022)
 
 The dataset comprises India's export and import statistics over the years, including:
 
@@ -16,67 +16,78 @@ The dataset comprises India's export and import statistics over the years, inclu
 
 ## Visualizations
 
-### 1. Line Chart – Trend of Exports and Imports Over Years
+### 1. Trend of Exports and Imports Over Years
 
-A line chart depicting the annual trends of India's exports and imports. The visualization highlights periods of significant growth and decline, reflecting economic events and policy changes.
 ![alt text](<Plots and Graphs/line_exports_imports.png>)
 
-### 2. Bar Plot – Top 10 Countries by Total Trade
+A line chart depicting the annual trends of India's exports and imports. The visualization highlights periods of significant growth and decline, reflecting economic events and policy changes.
 
-A bar plot showcasing the top 10 countries contributing to India's total trade. This visualization emphasizes the major trade partners and their respective shares.
+### 2. Top 10 Countries by Total Trade
+
 ![alt text](<Plots and Graphs/bar_top_trade.png>)
 
-### 3. Box Plot – Distribution of Export Values Across Countries
+A bar plot showcasing the top 10 countries contributing to India's total trade. This visualization emphasizes the major trade partners and their respective shares.
 
-A box plot illustrating the spread of export values across different countries, with a zoomed-in y-axis to focus on the majority of data points, excluding extreme outliers.
+### 3. Distribution of Export Values Across Countries
+
 ![alt text](<Plots and Graphs/box_exports.png>)
 
-### 4. Scatter Plot – Export vs Import
+A box plot illustrating the spread of export values across different countries, with a zoomed-in y-axis to focus on the majority of data points, excluding extreme outliers.
 
-A scatter plot comparing export and import values, revealing correlations and trade imbalances between countries.
+### 4. Export vs Import
+
 ![alt text](<Plots and Graphs/scatter_exports_imports.png>)
 
-### 5. Histogram – Distribution of Export Values
+A scatter plot comparing export and import values, revealing correlations and trade imbalances between countries.
 
-A histogram displaying the frequency distribution of export values, highlighting the concentration of data points and the presence of outliers.
+### 5. Distribution of Export Values
+
 ![alt text](<Plots and Graphs/hist_trade_balance.png>)
 
-### 6. KDE Plot – Export Value Density (Filtered)
+A histogram displaying the frequency distribution of export values, highlighting the concentration of data points and the presence of outliers.
 
-A Kernel Density Estimate (KDE) plot providing a smoothed representation of the export value distribution after filtering out extreme outliers.
+### 6. Export Value Density (Filtered)
+
 ![alt text](<Plots and Graphs/kde_total_trade.png>)
 
-### 7. Violin Plot – Export Distribution Across Top Countries
+A Kernel Density Estimate (KDE) plot providing a smoothed representation of the export value distribution after filtering out extreme outliers.
 
-A violin plot combining aspects of box plots and KDEs to show the distribution of export values across the top countries, indicating variability and central tendency.
+### 7. Export Distribution Across Top Countries
+
 ![alt text](<Plots and Graphs/violin_imports.png>)
 
-### 8. Bar Plot – top 10 countries by trade deficit
+A violin plot combining aspects of box plots and KDEs to show the distribution of export values across the top countries, indicating variability and central tendency.
 
-A bar plot showcasing the top 10 countries by trade deficit. This visualization emphasizes the major trade partners and their respective in trade deficit.
+### 8. Top 10 countries by trade deficit
+
 ![alt text](<Plots and Graphs/bar_trade_deficit.png>)
 
-### 9. Bar Plot – top 10 countries by trade surplus
+A bar plot showcasing the top 10 countries by trade deficit. This visualization emphasizes the major trade partners and their respective in trade deficit.
 
-A bar plot showcasing the top 10 countries by trade surplus. This visualization emphasizes the major trade partners and their respective shares in trade surplus.
+### 9. Top 10 countries by trade surplus
+
 ![alt text](<Plots and Graphs/bar_trade_surplus.png>)
 
-### 10. Pie/Ring Chart – Exports Share by Top 8 Countries
+A bar plot showcasing the top 10 countries by trade surplus. This visualization emphasizes the major trade partners and their respective shares in trade surplus.
 
-A pie (ring) chart depicting the share of total exports contributed by the top 8 countries, with the "Others" category representing the remaining countries.
+### 10. Exports Share by Top 8 Countries
+
 ![alt text](<Plots and Graphs/pie_exports_share.png>)
 
-## Technologies Used
+A pie (ring) chart depicting the share of total exports contributed by the top 8 countries, with the "Others" category representing the remaining countries.
 
-- Python
-- Pandas
-- Seaborn
-- Matplotlib
+## Technologies Used 
+
+- **Python** – A versatile programming language used for data analysis and visualization.  
+- **Pandas** – A powerful library for data manipulation and handling structured datasets.  
+- **Seaborn** – A statistical data visualization library built on top of Matplotlib for creating attractive plots.  
+- **Matplotlib** – A plotting library for creating static, animated, and interactive visualizations in Python.  
+
 
 ## Files Included
 
 - `data_visualization.py`: Python script containing the code for data visualization.
-- `exports_imports_data.csv`: CSV file with the dataset.
+- `exports and imports of india(1997- July 2022) - exports and imports.xlsx`: Excel file with the dataset.
 - `README.md`: Project documentation.
 
 ## Insights
@@ -86,10 +97,3 @@ A pie (ring) chart depicting the share of total exports contributed by the top 8
 - **Export Distribution**: The box and violin plots illustrate the variability in export values across countries, highlighting both consistency and outliers.
 - **Trade Imbalances**: The scatter plot indicates correlations and imbalances between exports and imports, suggesting areas for policy focus.
 
-## Conclusion
-
-This project demonstrates the power of data visualization in understanding complex datasets. By employing various plots, we can uncover trends, identify key players, and gain insights into India's trade dynamics.
-
-## License
-
-This project is licensed under the MIT License.
