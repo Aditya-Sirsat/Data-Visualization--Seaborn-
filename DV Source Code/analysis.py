@@ -14,7 +14,7 @@ data = pd.read_excel(file_path, sheet_name=df.sheet_names[0])
 data = data.dropna(subset=["Export", "Import", "Total Trade", "Trade Balance"])
 
 # Create output folder
-output_dir = "outputs"
+output_dir = "D:\\AI and Decentralization Internship\\Data Visualization (Seaborn)\\Plots and Graphs"
 os.makedirs(output_dir, exist_ok=True)
 
 # 1. Line plot - Exports vs Imports over years
@@ -39,7 +39,7 @@ plt.ylabel("Country")
 plt.savefig(f"{output_dir}/bar_top_trade.png")
 plt.close()
 
-# 3. Top 10 trade surplus countries
+# 3. Bar Plot - Top 10 trade surplus countries
 plt.figure(figsize=(10,6))
 top_surplus = data.groupby("Country")["Trade Balance"].sum().nlargest(10)
 sns.barplot(x=top_surplus.values, y=top_surplus.index, palette="Greens_r")
@@ -48,7 +48,7 @@ plt.xlabel("Trade Balance (in millions USD)")
 plt.savefig(f"{output_dir}/bar_trade_surplus.png")
 plt.close()
 
-# 4. Top 10 trade deficit countries
+# 4. Bar Plot - Top 10 trade deficit countries
 plt.figure(figsize=(10,6))
 top_deficit = data.groupby("Country")["Trade Balance"].sum().nsmallest(10)
 sns.barplot(x=top_deficit.values, y=top_deficit.index, palette="Reds_r")
